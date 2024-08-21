@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es5", // Target modern JavaScript to ensure compatibility
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true, // Allows JavaScript files to be compiled
+    "skipLibCheck": true, // Skip type checking of declaration files for faster builds
+    "strict": true, // Enable all strict type-checking options
+    "noEmit": true, // Do not output any files; just perform type checking
+    "esModuleInterop": true, // Enables emit interoperability between CommonJS and ES Modules
+    "module": "esnext", // Use the latest module system
+    "moduleResolution": "node", // Use Node.js module resolution strategy
+    "resolveJsonModule": true, // Allows importing JSON modules
+    "isolatedModules": true, // Ensure that each file can be transpiled independently
+    "jsx": "preserve", // Preserve JSX syntax for further compilation (handled by Next.js)
+    "incremental": true, // Enables incremental compilation for faster builds
+    "paths": {
+      "@/*": ["./src/*"] // Allows for absolute imports from the src directory
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"], // Include TypeScript and type definition files
+  "exclude": ["node_modules"] // Exclude node_modules from type checking
+}
